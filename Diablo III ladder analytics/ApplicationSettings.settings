@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Diablo_III_ladder_analytics" GeneratedClassName="ApplicationSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AccountsFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/accounts.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
