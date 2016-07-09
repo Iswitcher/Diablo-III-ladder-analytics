@@ -1,0 +1,9 @@
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\bin\Debug\Diablo III ladder analytics.exe.config
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\bin\Debug\Diablo III ladder analytics.exe
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\bin\Debug\Diablo III ladder analytics.pdb
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.csprojResolveAssemblyReference.cache
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo_III_ladder_analytics.Form1.resources
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo_III_ladder_analytics.Properties.Resources.resources
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.csproj.GenerateResource.Cache
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.exe
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.pdb
