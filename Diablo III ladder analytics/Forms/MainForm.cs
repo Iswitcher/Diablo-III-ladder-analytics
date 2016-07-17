@@ -33,5 +33,12 @@ namespace Diablo_III_ladder_analytics
         {
             AppSettings.RefreshAppSettings();
         }
+
+        private void loadAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccountSelector form = new AccountSelector();
+            form.ShowDialog();
+        }
+
     }
 }

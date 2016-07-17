@@ -46,18 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AccountSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountSelector.Designer.cs">
+      <DependentUpon>AccountSelector.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\AccountController.cs" />
     <Compile Include="Classes\AppSettings.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewAccountForm.cs">
+    <Compile Include="Forms\NewAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewAccountForm.Designer.cs">
+    <Compile Include="Forms\NewAccountForm.Designer.cs">
       <DependentUpon>NewAccountForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -67,10 +73,13 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>ApplicationSettings.settings</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\AccountSelector.resx">
+      <DependentUpon>AccountSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewAccountForm.resx">
+    <EmbeddedResource Include="Forms\NewAccountForm.resx">
       <DependentUpon>NewAccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

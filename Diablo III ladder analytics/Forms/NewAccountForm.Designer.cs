@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.battleNetLinkLabel = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.clientIdTextBox = new System.Windows.Forms.TextBox();
             this.clientSecretIdTextbox = new System.Windows.Forms.TextBox();
@@ -50,16 +50,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Register the new Blizzard Dev account here: ";
             // 
-            // linkLabel1
+            // battleNetLinkLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(231, 13);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 13);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://dev.battle.net/";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.battleNetLinkLabel.AutoSize = true;
+            this.battleNetLinkLabel.Location = new System.Drawing.Point(231, 13);
+            this.battleNetLinkLabel.Name = "battleNetLinkLabel";
+            this.battleNetLinkLabel.Size = new System.Drawing.Size(113, 13);
+            this.battleNetLinkLabel.TabIndex = 1;
+            this.battleNetLinkLabel.TabStop = true;
+            this.battleNetLinkLabel.Text = "https://dev.battle.net/";
+            this.battleNetLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label2
             // 
@@ -76,6 +76,7 @@
             this.clientIdTextBox.Name = "clientIdTextBox";
             this.clientIdTextBox.Size = new System.Drawing.Size(241, 20);
             this.clientIdTextBox.TabIndex = 3;
+            this.clientIdTextBox.Enter += new System.EventHandler(this.clientIdTextBox_Enter);
             // 
             // clientSecretIdTextbox
             // 
@@ -83,6 +84,7 @@
             this.clientSecretIdTextbox.Name = "clientSecretIdTextbox";
             this.clientSecretIdTextbox.Size = new System.Drawing.Size(241, 20);
             this.clientSecretIdTextbox.TabIndex = 4;
+            this.clientSecretIdTextbox.Enter += new System.EventHandler(this.clientSecretIdTextbox_Enter);
             // 
             // label3
             // 
@@ -117,6 +119,7 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(131, 20);
             this.usernameTextBox.TabIndex = 8;
+            this.usernameTextBox.Enter += new System.EventHandler(this.usernameTextBox_Enter);
             // 
             // OkButton
             // 
@@ -152,7 +155,7 @@
             this.Controls.Add(this.clientSecretIdTextbox);
             this.Controls.Add(this.clientIdTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.battleNetLinkLabel);
             this.Controls.Add(this.label1);
             this.MaximumSize = new System.Drawing.Size(377, 206);
             this.MinimumSize = new System.Drawing.Size(377, 206);
@@ -166,7 +169,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel battleNetLinkLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox clientIdTextBox;
         private System.Windows.Forms.TextBox clientSecretIdTextbox;

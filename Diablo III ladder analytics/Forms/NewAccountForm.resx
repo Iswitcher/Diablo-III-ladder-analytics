@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="app_name" xml:space="preserve">
-    <value>Diablo III Analyzer</value>
-  </data>
-  <data name="MainForm_exitToolStripMenuItem_Click_exit_app" xml:space="preserve">
-    <value>Do you want to exit the application?</value>
-  </data>
-  <data name="NewAccountForm_accountCreated" xml:space="preserve">
-    <value>Account created.</value>
-  </data>
-  <data name="NewAccountForm_accountCreatedText" xml:space="preserve">
-    <value>Account with username {0} was created.</value>
-  </data>
 </root>

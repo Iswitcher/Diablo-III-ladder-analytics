@@ -25,7 +25,7 @@ namespace Diablo_III_ladder_analytics {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("/accounts.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("accounts")]
         public string AccountsFilePath {
             get {
                 return ((string)(this["AccountsFilePath"]));

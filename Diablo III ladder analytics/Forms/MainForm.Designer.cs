@@ -34,6 +34,7 @@
             this.editAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             this.aPIToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newAccountToolStripMenuItem,
             this.editAccountToolStripMenuItem,
-            this.loadAccountToolStripMenuItem});
+            this.loadAccountToolStripMenuItem,
+            this.deleteAccountToolStripMenuItem});
             this.aPIToolStripMenuItem.Name = "aPIToolStripMenuItem";
             this.aPIToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.aPIToolStripMenuItem.Text = "API";
@@ -61,21 +63,23 @@
             // newAccountToolStripMenuItem
             // 
             this.newAccountToolStripMenuItem.Name = "newAccountToolStripMenuItem";
-            this.newAccountToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.newAccountToolStripMenuItem.Text = "New account";
             this.newAccountToolStripMenuItem.Click += new System.EventHandler(this.newAccountToolStripMenuItem_Click);
             // 
             // editAccountToolStripMenuItem
             // 
+            this.editAccountToolStripMenuItem.Enabled = false;
             this.editAccountToolStripMenuItem.Name = "editAccountToolStripMenuItem";
-            this.editAccountToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.editAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.editAccountToolStripMenuItem.Text = "Edit account";
             // 
             // loadAccountToolStripMenuItem
             // 
             this.loadAccountToolStripMenuItem.Name = "loadAccountToolStripMenuItem";
-            this.loadAccountToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.loadAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.loadAccountToolStripMenuItem.Text = "Load account";
+            this.loadAccountToolStripMenuItem.Click += new System.EventHandler(this.loadAccountToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -83,6 +87,13 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // deleteAccountToolStripMenuItem
+            // 
+            this.deleteAccountToolStripMenuItem.Enabled = false;
+            this.deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
+            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.deleteAccountToolStripMenuItem.Text = "Delete account";
             // 
             // MainForm
             // 
@@ -92,7 +103,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Diablo III Ladder analyzer";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -109,6 +120,7 @@
         private System.Windows.Forms.ToolStripMenuItem newAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteAccountToolStripMenuItem;
     }
 }
 

@@ -77,5 +77,23 @@ namespace Diablo_III_ladder_analytics.Properties {
                 return ResourceManager.GetString("MainForm_exitToolStripMenuItem_Click_exit_app", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account created..
+        /// </summary>
+        internal static string NewAccountForm_accountCreated {
+            get {
+                return ResourceManager.GetString("NewAccountForm_accountCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account with username {0} was created..
+        /// </summary>
+        internal static string NewAccountForm_accountCreatedText {
+            get {
+                return ResourceManager.GetString("NewAccountForm_accountCreatedText", resourceCulture);
+            }
+        }
     }
 }

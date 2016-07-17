@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="AccountsFilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">/accounts.xml</Value>
+      <Value Profile="(Default)">accounts</Value>
     </Setting>
   </Settings>
 </SettingsFile>
