@@ -34,5 +34,30 @@ namespace Diablo_III_ladder_analytics {
                 this["AccountsFilePath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://{0}.battle.net/oauth/token?client_id={1}&amp;client_secret={2}&amp;grant_" +
+            "type=client_credentials")]
+        public string BlizzTokenRequestUrl {
+            get {
+                return ((string)(this["BlizzTokenRequestUrl"]));
+            }
+            set {
+                this["BlizzTokenRequestUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int WebRequestsPerSecond {
+            get {
+                return ((int)(this["WebRequestsPerSecond"]));
+            }
+            set {
+                this["WebRequestsPerSecond"] = value;
+            }
+        }
     }
 }

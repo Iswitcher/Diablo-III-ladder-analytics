@@ -39,7 +39,7 @@
             this.accountsListBox.FormattingEnabled = true;
             this.accountsListBox.Location = new System.Drawing.Point(1, 2);
             this.accountsListBox.Name = "accountsListBox";
-            this.accountsListBox.Size = new System.Drawing.Size(260, 95);
+            this.accountsListBox.Size = new System.Drawing.Size(260, 108);
             this.accountsListBox.TabIndex = 0;
             this.accountsListBox.DoubleClick += new System.EventHandler(this.accountsListBox_DoubleClick);
             // 

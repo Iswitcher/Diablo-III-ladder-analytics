@@ -22,7 +22,7 @@ namespace Diablo_III_ladder_analytics.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Diablo_III_ladder_analytics.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Diablo_III_ladder_analytics.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Diablo_III_ladder_analytics.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Diablo_III_ladder_analytics.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Diablo III Analyzer.
         /// </summary>
-        internal static string app_name {
+        public static string app_name {
             get {
                 return ResourceManager.GetString("app_name", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Diablo_III_ladder_analytics.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Do you want to exit the application?.
         /// </summary>
-        internal static string MainForm_exitToolStripMenuItem_Click_exit_app {
+        public static string MainForm_exitToolStripMenuItem_Click_exit_app {
             get {
                 return ResourceManager.GetString("MainForm_exitToolStripMenuItem_Click_exit_app", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Diablo_III_ladder_analytics.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Account created..
         /// </summary>
-        internal static string NewAccountForm_accountCreated {
+        public static string NewAccountForm_accountCreated {
             get {
                 return ResourceManager.GetString("NewAccountForm_accountCreated", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Diablo_III_ladder_analytics.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Account with username {0} was created..
         /// </summary>
-        internal static string NewAccountForm_accountCreatedText {
+        public static string NewAccountForm_accountCreatedText {
             get {
                 return ResourceManager.GetString("NewAccountForm_accountCreatedText", resourceCulture);
             }

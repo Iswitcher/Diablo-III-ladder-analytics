@@ -5,5 +5,11 @@
     <Setting Name="AccountsFilePath" Type="System.String" Scope="User">
       <Value Profile="(Default)">accounts</Value>
     </Setting>
+    <Setting Name="BlizzTokenRequestUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://{0}.battle.net/oauth/token?client_id={1}&amp;amp;client_secret={2}&amp;amp;grant_type=client_credentials</Value>
+    </Setting>
+    <Setting Name="WebRequestsPerSecond" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

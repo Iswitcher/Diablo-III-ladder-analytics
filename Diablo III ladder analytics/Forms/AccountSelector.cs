@@ -13,8 +13,6 @@ namespace Diablo_III_ladder_analytics
 {
     public partial class AccountSelector : Form
     {
-        private List<Account> accounts;
-
         public AccountSelector()
         {
             InitializeComponent();
@@ -31,7 +29,14 @@ namespace Diablo_III_ladder_analytics
 
         private void accountsListBox_DoubleClick(object sender, EventArgs e)
         {
+            var accounts = AccountController.GetAccounts();
             var selectedUser = accountsListBox.SelectedItem.ToString();
+            var clientId = accounts.Where(w => w.Username == selectedUser).Select(s => s.ClientId).ToString();
+            var clientSecretId = accounts.Where(w => w.Username == selectedUser).Select(s => s.ClientSecretId).ToString();
+            //MainForm.AuthorizeUser(selectedUser,clientId,clientSecretId);
+
+            Close();
         }
+
     }
 }

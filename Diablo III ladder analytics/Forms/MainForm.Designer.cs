@@ -33,9 +33,15 @@
             this.newAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.authorizationGroupBox = new System.Windows.Forms.GroupBox();
+            this.notAuthorizedLabel = new System.Windows.Forms.Label();
+            this.webSyncGroupBox = new System.Windows.Forms.GroupBox();
+            this.syncButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            this.authorizationGroupBox.SuspendLayout();
+            this.webSyncGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -45,7 +51,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(697, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(849, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,13 +87,6 @@
             this.loadAccountToolStripMenuItem.Text = "Load account";
             this.loadAccountToolStripMenuItem.Click += new System.EventHandler(this.loadAccountToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // deleteAccountToolStripMenuItem
             // 
             this.deleteAccountToolStripMenuItem.Enabled = false;
@@ -95,11 +94,61 @@
             this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.deleteAccountToolStripMenuItem.Text = "Delete account";
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // authorizationGroupBox
+            // 
+            this.authorizationGroupBox.Controls.Add(this.notAuthorizedLabel);
+            this.authorizationGroupBox.Location = new System.Drawing.Point(637, 27);
+            this.authorizationGroupBox.Name = "authorizationGroupBox";
+            this.authorizationGroupBox.Size = new System.Drawing.Size(200, 100);
+            this.authorizationGroupBox.TabIndex = 1;
+            this.authorizationGroupBox.TabStop = false;
+            this.authorizationGroupBox.Text = "Authorization status";
+            // 
+            // notAuthorizedLabel
+            // 
+            this.notAuthorizedLabel.AutoSize = true;
+            this.notAuthorizedLabel.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notAuthorizedLabel.ForeColor = System.Drawing.Color.Red;
+            this.notAuthorizedLabel.Location = new System.Drawing.Point(28, 29);
+            this.notAuthorizedLabel.Name = "notAuthorizedLabel";
+            this.notAuthorizedLabel.Size = new System.Drawing.Size(153, 46);
+            this.notAuthorizedLabel.TabIndex = 0;
+            this.notAuthorizedLabel.Text = "Not \r\nauthorized!";
+            this.notAuthorizedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // webSyncGroupBox
+            // 
+            this.webSyncGroupBox.Controls.Add(this.syncButton);
+            this.webSyncGroupBox.Location = new System.Drawing.Point(13, 27);
+            this.webSyncGroupBox.Name = "webSyncGroupBox";
+            this.webSyncGroupBox.Size = new System.Drawing.Size(618, 100);
+            this.webSyncGroupBox.TabIndex = 2;
+            this.webSyncGroupBox.TabStop = false;
+            this.webSyncGroupBox.Text = "Sync parameters";
+            // 
+            // syncButton
+            // 
+            this.syncButton.Location = new System.Drawing.Point(537, 62);
+            this.syncButton.Name = "syncButton";
+            this.syncButton.Size = new System.Drawing.Size(75, 32);
+            this.syncButton.TabIndex = 0;
+            this.syncButton.Text = "SYNC";
+            this.syncButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 405);
+            this.ClientSize = new System.Drawing.Size(849, 506);
+            this.Controls.Add(this.webSyncGroupBox);
+            this.Controls.Add(this.authorizationGroupBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -107,6 +156,9 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.authorizationGroupBox.ResumeLayout(false);
+            this.authorizationGroupBox.PerformLayout();
+            this.webSyncGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +173,10 @@
         private System.Windows.Forms.ToolStripMenuItem loadAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteAccountToolStripMenuItem;
+        private System.Windows.Forms.GroupBox authorizationGroupBox;
+        private System.Windows.Forms.Label notAuthorizedLabel;
+        private System.Windows.Forms.GroupBox webSyncGroupBox;
+        private System.Windows.Forms.Button syncButton;
     }
 }
 
