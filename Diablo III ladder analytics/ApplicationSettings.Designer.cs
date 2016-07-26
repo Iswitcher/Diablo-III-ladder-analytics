@@ -37,8 +37,8 @@ namespace Diablo_III_ladder_analytics {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://{0}.battle.net/oauth/token?client_id={1}&amp;client_secret={2}&amp;grant_" +
-            "type=client_credentials")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://eu.battle.net/oauth/token?client_id={0}&client_secret={1}&grant_type=clie" +
+            "nt_credentials")]
         public string BlizzTokenRequestUrl {
             get {
                 return ((string)(this["BlizzTokenRequestUrl"]));

@@ -8,3 +8,6 @@ D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladde
 D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.csproj.GenerateResource.Cache
 D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.exe
 D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.pdb
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\obj\Debug\Diablo III ladder analytics.csprojResolveAssemblyReference.cache
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\bin\Debug\Newtonsoft.Json.dll
+D:\Users\Iswitcher\Documents\GitHub\Diablo III ladder analytics\Diablo III ladder analytics\bin\Debug\Newtonsoft.Json.xml

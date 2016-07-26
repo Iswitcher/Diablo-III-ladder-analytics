@@ -1,6 +1,6 @@
 # Diablo-III-ladder-analytics
 
-Here will be developed an WinForm app, designed to scoop data from Blizzard Battle Net API for Diablo III.
+Here will be developed a WinForm app, designed to scoop data from Blizzard Battle Net API for Diablo III.
 App uses newtonJson to convert incoming data, parses it through LINQ queries directly into SQLite database, 
 hosted in the same folder as the app.
 

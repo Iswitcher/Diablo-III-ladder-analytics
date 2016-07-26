@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Diablo_III_ladder_analytics.Classes;
 
@@ -29,12 +23,12 @@ namespace Diablo_III_ladder_analytics
 
         private void accountsListBox_DoubleClick(object sender, EventArgs e)
         {
-            var accounts = AccountController.GetAccounts();
             var selectedUser = accountsListBox.SelectedItem.ToString();
-            var clientId = accounts.Where(w => w.Username == selectedUser).Select(s => s.ClientId).ToString();
-            var clientSecretId = accounts.Where(w => w.Username == selectedUser).Select(s => s.ClientSecretId).ToString();
-            //MainForm.AuthorizeUser(selectedUser,clientId,clientSecretId);
-
+            var accounts = AccountController.GetAccounts();
+            var clientId = accounts.Where(w => w.Username == selectedUser).Select(s => s.ClientId).First();
+            var clientSecretId =
+                accounts.Where(w => w.Username == selectedUser).Select(s => s.ClientSecretId).First();
+            MainForm.AuthorizeUser(selectedUser, clientId, clientSecretId);
             Close();
         }
 

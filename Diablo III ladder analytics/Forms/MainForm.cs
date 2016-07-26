@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Drawing;
-using System.Drawing.Text;
 using System.Windows.Forms;
 using Diablo_III_ladder_analytics.Classes;
 using Diablo_III_ladder_analytics.Properties;
@@ -48,10 +46,11 @@ namespace Diablo_III_ladder_analytics
         
         }
 
-        public void AuthorizeUser(string username,string clientId, string clientSecretId)
+        public static void AuthorizeUser(string username,string clientId, string clientSecretId)
         {
             //CRUTCH!!!
-            var token = WebRequestsController.RequestToken(clientId, clientSecretId);
+            var tokenJson = WebRequestsController.RequestToken(clientId, clientSecretId);
+            var token = JsonParser.ParseJson(tokenJson, (int) JsonTypes.Token);
         }
 
     }
